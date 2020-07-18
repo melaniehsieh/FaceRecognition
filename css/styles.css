@@ -2,9 +2,9 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background-color: #001a2e;
-  height: 100vh;
-  width: calc(100% - 33px);
+  background-color: #000;
+  /* height: 100vh; */
+  /* width: calc(100% - 33px); */
   font-family: "Open Sans", sans-serif;
 }
 
@@ -14,50 +14,47 @@ canvas {
 
 .container {
   display: flex;
-  width: 100%;
   justify-content: center;
   align-items: center;
-  margin-top: 10px;
+  /* width: 100%; */
+  /* margin-top: 10px; */
 }
 
 .result-container {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
-  width: 100%;
+  padding: 1em;
+  font-size: 25px;
+  font-weight: lighter;
 }
 
-.result-container > div {
-  font-size: 25px;
-  padding: 10px;
-  margin: 10px;
-  color: white;
-  text-transform: capitalize;
+#emotion {
+  color: #ff676d;
+}
+
+#gender {
+  color: #ff8992;
 }
 
 #age {
-  background: #1e94be;
+  color: #ffacb7;
 }
-#emotion {
-  background: #8a1025;
-}
-#gender {
-  background: #009353;
-}
+
 video {
-  width: 100%;
+  /* width: 100%; */
 }
+
 header {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: #000b13;
   color: white;
   width: 100%;
-  font: 35px "Open Sans", sans-serif;
-  font-weight: bold;
-  padding: 20px;
+  font: 1.8em "Open Sans", sans-serif;
+  font-weight: 600;
+  padding-top: 50px;
 }
 
 footer {
@@ -65,15 +62,14 @@ footer {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background: #000b13;
-  color: white;
+  color: #bbbbbb;
   width: 100%;
-  font: 20px "Open Sans", sans-serif;
+  font: 0.9em "Open Sans", sans-serif;
   padding: 20px;
 }
 
 a {
-  color: rgb(255, 234, 0);
-  font: 20px "Open Sans", sans-serif;
-  text-decoration: none;
+  color: #bbbbbb;
+  font: 0.9em "Open Sans", sans-serif;
+  text-decoration: underline;
 }
